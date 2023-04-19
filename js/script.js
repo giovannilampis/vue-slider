@@ -1,3 +1,5 @@
+"use strict"
+
 const slides = [
 {
     image: 'img/01.webp',
@@ -23,3 +25,16 @@ const slides = [
 ];
 
 console.log(slides);
+
+const { createApp } = Vue
+
+createApp ({
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+
+    }
+}).mount("#app")
