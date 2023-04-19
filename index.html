@@ -28,13 +28,8 @@
                 <div class="item">
                     <img src="img/01.webp" alt="Spiderman" />
                     <div class="text">
-                        <h3>Spiderman</h3>
-                        <p>
-                            Brick invincible Luigi. Cheep cheep hammer
-                            bro invincible Luigi starman Japan Mushroom Kingdom life.
-                            Lakitu bridge question block slide super mushroom, Japan
-                            B-button green shell invincible Luigi Mario Bros. Invincible Luigi platform game pak
-                        </p>
+                        <h3> {{ slides.title }} </h3>
+                        <p> {{ slides.text }} </p>
                     </div>
                 </div>
 
@@ -44,10 +39,10 @@
 
                     <div class="next"></div>
 
-                    <div class="thumb active">
-                        <img v-for=" (element,index) in slides" v-bind:src="element.image" :alt="`${element.text} ${index} `">          
+                    <div class="thumb active" v-for=" (element,index) in slides" :key = "index">
+                        <img v-bind:src="element.image" :alt="`${element.text} ${index} `">          
                     </div>
-                    
+
                 </div>
 
             </div>
