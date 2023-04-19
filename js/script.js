@@ -34,6 +34,10 @@ createApp ({
 
         return {
 
+            // the first image will have index = 0
+
+            activeIndex: 0,
+
             slides: [
                        {
                         image: 'img/01.webp',
