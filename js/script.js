@@ -82,9 +82,15 @@ createApp ({
                 this.activeIndex = 0
             } 
         },
-
+        // change image function
         changeImg(i){
             this.activeIndex = i
+        },
+        // apply autoplay to the slider
+        autoScroll(){
+            setInterval( () => {
+                this.next()
+            }, 3000 )
         }
 
     }
