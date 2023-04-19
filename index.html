@@ -40,7 +40,7 @@
                     <div class="next" @click="next"></div>
 
                     <div class="thumb" :class="(activeIndex === index) ? 'active' : '' " v-for=" (element,index) in slides" :key = "index">
-                        <img v-bind:src="element.image" :alt="`${element.title} ${index} `">          
+                        <img v-bind:src="element.image" :alt=" `${element.title} ${index} ` " @click="changeImg(index)">          
                     </div>
 
                 </div>

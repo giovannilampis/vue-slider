@@ -83,7 +83,7 @@ createApp ({
             } 
         },
 
-        changeImage(i){
+        changeImg(i){
             this.activeIndex = i
         }
 
