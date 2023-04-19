@@ -64,7 +64,7 @@ createApp ({
 
         }
     },
-    
+
     methods: {
 
         prev(){
@@ -81,7 +81,10 @@ createApp ({
             if( this.activeIndex > this.slides.length - 1 ) {
                 this.activeIndex = 0
             } 
+        },
 
+        changeImage(i){
+            this.activeIndex = i
         }
 
     }
