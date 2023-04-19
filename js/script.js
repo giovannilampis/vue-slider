@@ -38,6 +38,8 @@ createApp ({
 
             activeIndex: 0,
 
+            autoscroll: null,
+
             slides: [
                        {
                         image: 'img/01.webp',
@@ -88,10 +90,20 @@ createApp ({
         },
         // apply autoplay to the slider
         autoScroll(){
-            setInterval( () => {
+            this.autoscroll = setInterval( () => {
                 this.next()
             }, 3000 )
+        },
+        stopAutoScroll(){
+            clearInterval(
+                this.autoscroll
+            )
+            this.autoscroll = null
         }
+    },
 
+    mounted(){
+        this.autoScroll()
     }
+
 }).mount("#app")
