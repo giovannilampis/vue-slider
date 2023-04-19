@@ -24,7 +24,7 @@
 //     }
 // ];
 
-console.log(slides);
+// console.log(slides);
 
 const { createApp } = Vue
 
